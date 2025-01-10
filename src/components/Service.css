@@ -1,0 +1,132 @@
+/* Services Section Styling */
+#services {
+  position: relative;
+  padding: 120px 20px 60px; /* Reduced bottom padding */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url('/bg-img.avif'); /* Correct path for image */
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 0, 0.6); /* Darkened overlay */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Services Container */
+.services-container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 30px;
+}
+
+/* Services Title */
+.services-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-top: 0; /* Reduced margin-top to move the heading higher */
+  margin-left: 6em;
+  margin-bottom: 60px; /* Increased the gap between the heading and the cards */
+  animation: fadeIn 1s ease-in-out forwards;
+  text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Services List (Responsive Grid) */
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+
+/* Service Item */
+.service-item {
+  position: relative;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 40px;
+  border-radius: 30px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+  transform: translateY(-20px);
+  animation: fadeInUp 1.5s ease-out forwards;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Center all text and content */
+  max-width: 100%; /* Ensure cards don't exceed container width */
+  margin-top: 40px; /* Increased margin-top to create more space between cards and heading */
+}
+
+/* Hover Effect for Service Item */
+.service-item:hover {
+  transform: translateY(-10px) scale(1.05); 
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+/* Icon Styling */
+.service-icon {
+  font-size: 3.5rem;
+  color: #00bcd4;
+  margin-bottom: 20px;
+}
+
+/* Service Content Styling */
+.service-content h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #4fdaec;
+  margin-bottom: 10px;
+}
+
+.service-content p {
+  font-size: 1.2rem;
+  color: #fdf9f9;
+  line-height: 1.6;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  #services {
+    padding: 80px 10px 40px; /* Reduced bottom padding on mobile */
+  }
+
+  .services-title {
+    font-size: 2.2rem; /* Smaller title size */
+    margin-left: 0;
+    text-align: center;
+    margin-bottom: 50px; /* Increased bottom margin on mobile for more spacing */
+  }
+
+  .services-list {
+    grid-template-columns: 1fr; /* 1 column for mobile */
+    gap: 15px;
+  }
+
+  .service-item {
+    padding: 20px;
+    margin: 10px;
+    max-width: 100%;
+    margin-top: 30px; /* Adjusted margin-top for mobile */
+  }
+
+  .service-icon {
+    font-size: 2.5rem;
+  }
+
+  .service-content h3 {
+    font-size: 1.4rem;
+  }
+
+  .service-content p {
+    font-size: 1rem;
+  }
+}

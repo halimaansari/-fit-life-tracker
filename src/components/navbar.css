@@ -1,0 +1,128 @@
+/* Reset body margin and padding */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Set up the navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to right, #008080, #00bcd4); /* Teal to Cyan Gradient */
+  z-index: 10;
+  padding: 10px 0;
+  box-sizing: border-box;
+  height: 80px; /* Increased height */
+}
+
+/* Navbar container */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+  height: 100%;
+}
+
+/* Logo styles */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar-logo img {
+  border-radius: 50%;
+  height: 50px; /* Adjust logo size */
+  margin-right: 15px;
+}
+
+/* Navbar links container */
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-left: auto;
+  list-style: none; /* Remove bullet points */
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  padding: 12px 18px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  background-color: #00796b; /* Darker teal on hover */
+}
+
+/* Hamburger button styles (initially hidden on large screens) */
+.navbar-hamburger {
+  display: none;
+  outline: none;
+  font-size: 24px; /* Reduced size for better visibility */
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px; /* Add padding for better spacing */
+  }
+
+  /* Navbar links are stacked vertically on small screens */
+  .navbar-links {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-top: 10px; /* Slight top margin for spacing */
+    gap: 10px; /* Space out the links more */
+    display: none; /* Initially hidden */
+    background-color: rgba(205, 242, 248, 0.9); /* Light background when opened */
+    padding: 10px 0; /* Padding for better spacing inside the menu */
+    border-radius: 10px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition for the background */
+  }
+
+  /* Show the navbar links when the class 'active' is added */
+  .navbar-links.active {
+    display: flex; /* Show when active */
+  }
+
+  .navbar-links a {
+    width: 100%; /* Links take full width */
+    text-align: center; /* Center text */
+    padding: 14px 0;
+    color: #333; /* Dark text for better visibility */
+    font-weight: bolder;
+    transition: background-color 0.3s ease;
+  }
+
+  .navbar-links a:hover {
+    background-color: #64dac6; /* Darker shade for hover effect */
+  }
+
+  /* Show hamburger menu on small screens */
+  .navbar-hamburger {
+    border: none;
+    outline: none;
+    
+    display: block; /* Show hamburger menu on small screens */
+  }
+}

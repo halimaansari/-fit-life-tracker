@@ -1,0 +1,52 @@
+/* Footer Section */
+footer {
+    background-color: #0a0707; /* Dark background for footer */
+    color: #fff; /* White text */
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  footer p {
+    margin: 5px 0;
+    font-size: 1rem;
+  }
+  
+  footer .footer-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #00bcd4; /* Add a color for the creator's name */
+  }
+  
+  footer .footer-copy {
+    font-size: 0.9rem;
+    color: #aaa; /* Lighter color for the copyright notice */
+  }
+  
+  
+  /* Footer Links */
+  .footer-links a {
+    color: #ff4081;  /* Pink color to match the theme */
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline; /* Underline on hover for better interaction */
+  }
+  
+  /* Responsive Design for Footer */
+  @media (max-width: 768px) {
+    #footer {
+      padding: 20px 10px;
+    }
+  
+    .footer-container p {
+      font-size: 1rem;
+    }
+  
+    .footer-links a {
+      font-size: 1rem;
+    }
+  }
+  

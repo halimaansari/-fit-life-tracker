@@ -1,0 +1,185 @@
+/* Pricing Section Styling */
+#pricing {
+    position: relative;
+    padding: 50px 20px; /* Reduced top padding to move section higher */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('./public/bg-img.avif'); /* Your background image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.6); /* Darkened overlay */
+    height: auto; /* Let content height adjust */
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Pricing Container */
+  .pricing-container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 30px;
+  }
+  
+  /* Pricing Title */
+  .pricing-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-top: 0; /* Remove extra top margin */
+    margin-bottom: 50px; /* Maintain bottom margin for spacing */
+    animation: fadeIn 1s ease-in-out forwards;
+    text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Pricing List (Responsive Grid) */
+  .pricing-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    width: 100%;
+  }
+  
+  /* Pricing Card */
+  .pricing-card {
+    position: relative;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+    transform: translateY(-20px);
+    animation: fadeInUp 1.5s ease-out forwards;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .pricing-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+  
+  /* Pricing Card Header (Plan Name) */
+  .pricing-card-header {
+    font-size: 2.5rem;
+    color: #00bcd4;
+    margin-bottom: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  /* Pricing Card Price */
+  .pricing-card-price {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  
+  /* Pricing Card Description */
+  .pricing-card-description {
+    font-size: 1.2rem;
+    color: #f1f1f1;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  /* Pricing Card Button */
+  .pricing-card-button {
+    font-size: 1.4rem;
+    padding: 18px 40px;
+    color: white;
+    background-color: #ff4081; /* Pink button */
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block;
+    animation: fadeInUp 2.5s ease-out;
+  }
+  
+  .pricing-card-button:hover {
+    background-color: #ff1a5d; /* Darker pink on hover */
+    transform: translateY(-8px); /* Hover effect for elevating button */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Responsive Design for Tablets */
+  @media (max-width: 1024px) {
+    .pricing-list {
+      grid-template-columns: repeat(2, 1fr); /* Two columns on tablets */
+    }
+  
+    .pricing-card {
+      padding: 30px; /* Adjust padding for better fit */
+    }
+  
+    .pricing-title {
+      font-size: 2.8rem; /* Adjust title size for tablets */
+      margin-bottom: 30px; /* Reduced margin-bottom */
+    }
+  }
+  
+  /* Responsive Design for Mobile */
+  @media (max-width: 768px) {
+    #pricing {
+      padding: 60px 20px; /* Reduced padding on mobile */
+    }
+  
+    .pricing-title {
+      font-size: 2.2rem; /* Adjust title font size */
+      margin-bottom: 30px; /* Adjust bottom margin */
+    }
+  
+    .pricing-list {
+      grid-template-columns: 1fr; /* Single column on mobile */
+      gap: 15px; /* Reduce gap between cards */
+    }
+  
+    .pricing-card {
+      padding: 20px;
+    }
+  
+    .pricing-card-header {
+      font-size: 2rem;
+    }
+  
+    .pricing-card-price {
+      font-size: 2rem;
+    }
+  
+    .pricing-card-description {
+      font-size: 1rem;
+    }
+  }
+  
+  /* Fade-In Animation for Pricing Section */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Fade-In Animation for Title */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
