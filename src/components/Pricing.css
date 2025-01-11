@@ -1,19 +1,19 @@
 /* Pricing Section Styling */
 #pricing {
     position: relative;
-    padding: 50px 20px; /* Reduced top padding to move section higher */
+    padding: 50px 20px; 
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: url('./public/bg-img.avif'); /* Your background image */
+    background-image: url('./public/bg-img.avif'); 
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     background-blend-mode: overlay;
-    background-color: rgba(0, 0, 0, 0.6); /* Darkened overlay */
-    height: auto; /* Let content height adjust */
+    background-color: rgba(0, 0, 0, 0.6);
+    height: auto; 
     text-align: center;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
   }
@@ -32,8 +32,8 @@
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 3px;
-    margin-top: 0; /* Remove extra top margin */
-    margin-bottom: 50px; /* Maintain bottom margin for spacing */
+    margin-top: 0; 
+    margin-bottom: 50px; 
     animation: fadeIn 1s ease-in-out forwards;
     text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.5);
   }
@@ -64,7 +64,7 @@
     cursor: pointer;
   }
   
-  /* Pricing Card Header (Plan Name) */
+  /* Pricing Card Header */
   .pricing-card-header {
     font-size: 2.5rem;
     color: #00bcd4;
@@ -94,7 +94,7 @@
     font-size: 1.4rem;
     padding: 18px 40px;
     color: white;
-    background-color: #ff4081; /* Pink button */
+    background-color: #ff4081; 
     border-radius: 50px;
     text-decoration: none;
     font-weight: bold;
@@ -105,41 +105,39 @@
   }
   
   .pricing-card-button:hover {
-    background-color: #ff1a5d; /* Darker pink on hover */
-    transform: translateY(-8px); /* Hover effect for elevating button */
+    background-color: #ff1a5d; 
+    transform: translateY(-8px); 
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
   }
   
-  /* Responsive Design for Tablets */
   @media (max-width: 1024px) {
     .pricing-list {
-      grid-template-columns: repeat(2, 1fr); /* Two columns on tablets */
+      grid-template-columns: repeat(2, 1fr); 
     }
   
     .pricing-card {
-      padding: 30px; /* Adjust padding for better fit */
+      padding: 30px; 
     }
   
     .pricing-title {
-      font-size: 2.8rem; /* Adjust title size for tablets */
-      margin-bottom: 30px; /* Reduced margin-bottom */
+      font-size: 2.8rem; 
+      margin-bottom: 30px; 
     }
   }
   
-  /* Responsive Design for Mobile */
   @media (max-width: 768px) {
     #pricing {
-      padding: 60px 20px; /* Reduced padding on mobile */
+      padding: 60px 20px; 
     }
   
     .pricing-title {
-      font-size: 2.2rem; /* Adjust title font size */
-      margin-bottom: 30px; /* Adjust bottom margin */
+      font-size: 2.2rem; 
+      margin-bottom: 30px; 
     }
   
     .pricing-list {
-      grid-template-columns: 1fr; /* Single column on mobile */
-      gap: 15px; /* Reduce gap between cards */
+      grid-template-columns: 1fr; 
+      gap: 15px; 
     }
   
     .pricing-card {
@@ -159,7 +157,6 @@
     }
   }
   
-  /* Fade-In Animation for Pricing Section */
   @keyframes fadeInUp {
     from {
       opacity: 0;

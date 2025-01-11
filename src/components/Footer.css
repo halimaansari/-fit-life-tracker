@@ -1,7 +1,7 @@
 /* Footer Section */
 footer {
-    background-color: #0a0707; /* Dark background for footer */
-    color: #fff; /* White text */
+    background-color: #0a0707;
+    color: #fff; 
     text-align: center;
     padding: 20px 0;
   }
@@ -14,25 +14,25 @@ footer {
   footer .footer-text {
     font-size: 1.2rem;
     font-weight: bold;
-    color: #00bcd4; /* Add a color for the creator's name */
+    color: #00bcd4;
   }
   
   footer .footer-copy {
     font-size: 0.9rem;
-    color: #aaa; /* Lighter color for the copyright notice */
+    color: #aaa;
   }
   
   
   /* Footer Links */
   .footer-links a {
-    color: #ff4081;  /* Pink color to match the theme */
+    color: #ff4081;  
     text-decoration: none;
     margin: 0 10px;
     font-weight: bold;
   }
   
   .footer-links a:hover {
-    text-decoration: underline; /* Underline on hover for better interaction */
+    text-decoration: underline; 
   }
   
   /* Responsive Design for Footer */

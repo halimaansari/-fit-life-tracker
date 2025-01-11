@@ -94,7 +94,7 @@
 /* Responsive Design for Mobile */
 @media (max-width: 768px) {
   .headline {
-    font-size: 3rem; /* Adjusted font size for mobile */
+    font-size: 3rem;
   }
 
   .subheading {

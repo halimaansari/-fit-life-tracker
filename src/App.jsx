@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-import Navbar from "./components/Navbar.jsx"; // Make sure this is the correct path for your Navbar file
+import Navbar from "./components/Navbar.jsx"; 
 import Home from './components/home.jsx';
 import About from './components/About.jsx';
 import Service from './components/Service.jsx';

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Navbar.css'; // Assuming your styles are in a separate file
+import './Navbar.css'; 
 
 const Navbar = () => {
   // State to control the visibility of the menu
@@ -7,7 +7,7 @@ const Navbar = () => {
 
   // Function to handle the menu toggle
   const handleMenuToggle = () => {
-    setIsMenuOpen(!isMenuOpen); // Toggle the menu state
+    setIsMenuOpen(!isMenuOpen)
   };
 
   return (
@@ -20,7 +20,7 @@ const Navbar = () => {
         {/* Button to toggle the menu visibility */}
         <button
           className="navbar-hamburger"
-          onClick={handleMenuToggle} // Call handleMenuToggle on click
+          onClick={handleMenuToggle} 
         >
           &#9776;
         </button>

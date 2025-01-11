@@ -1,5 +1,5 @@
 import React from 'react';
-import './service.css';  // Ensure the path to the CSS file is correct
+import './Service.css';  
 
 function Services() {
   return (

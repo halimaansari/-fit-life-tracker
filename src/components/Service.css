@@ -1,18 +1,18 @@
 /* Services Section Styling */
 #services {
   position: relative;
-  padding: 120px 20px 60px; /* Reduced bottom padding */
+  padding: 120px 20px 60px; 
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-image: url('/bg-img.avif'); /* Correct path for image */
+  background-image: url('/bg-img.avif');
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
   background-blend-mode: overlay;
-  background-color: rgba(0, 0, 0, 0.6); /* Darkened overlay */
+  background-color: rgba(0, 0, 0, 0.6); 
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 }
 
@@ -30,9 +30,9 @@
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 3px;
-  margin-top: 0; /* Reduced margin-top to move the heading higher */
+  margin-top: 0; 
   margin-left: 6em;
-  margin-bottom: 60px; /* Increased the gap between the heading and the cards */
+  margin-bottom: 60px; 
   animation: fadeIn 1s ease-in-out forwards;
   text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.5);
 }
@@ -60,26 +60,24 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center; /* Center all text and content */
-  max-width: 100%; /* Ensure cards don't exceed container width */
-  margin-top: 40px; /* Increased margin-top to create more space between cards and heading */
+  text-align: center;
+  max-width: 100%; 
+  margin-top: 40px; 
 }
 
-/* Hover Effect for Service Item */
+
 .service-item:hover {
   transform: translateY(-10px) scale(1.05); 
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
 
-/* Icon Styling */
 .service-icon {
   font-size: 3.5rem;
   color: #00bcd4;
   margin-bottom: 20px;
 }
 
-/* Service Content Styling */
 .service-content h3 {
   font-size: 1.8rem;
   font-weight: 700;
@@ -96,18 +94,18 @@
 /* Responsive Design for Mobile */
 @media (max-width: 768px) {
   #services {
-    padding: 80px 10px 40px; /* Reduced bottom padding on mobile */
+    padding: 80px 10px 40px; 
   }
 
   .services-title {
-    font-size: 2.2rem; /* Smaller title size */
+    font-size: 2.2rem; 
     margin-left: 0;
     text-align: center;
-    margin-bottom: 50px; /* Increased bottom margin on mobile for more spacing */
+    margin-bottom: 50px; 
   }
 
   .services-list {
-    grid-template-columns: 1fr; /* 1 column for mobile */
+    grid-template-columns: 1fr;
     gap: 15px;
   }
 
@@ -115,7 +113,7 @@
     padding: 20px;
     margin: 10px;
     max-width: 100%;
-    margin-top: 30px; /* Adjusted margin-top for mobile */
+    margin-top: 30px;
   }
 
   .service-icon {
