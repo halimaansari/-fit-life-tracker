@@ -14,7 +14,7 @@ const Navbar = () => {
     <div className="navbar">
       <div className="navbar-container">
         <a href="#" className="navbar-logo">
-          <img src="./public/logo.jpg" alt="Logo" /> Fit Tracker
+          <img src="/logo.jpg" alt="Logo" /> Fit Tracker
         </a>
 
         {/* Button to toggle the menu visibility */}
